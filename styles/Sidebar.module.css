@@ -1,0 +1,35 @@
+ 
+  .pokedexPanel {
+    width: 100%;
+    height: 80px;
+    background: red;
+    border-radius: 15px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+    border: 4px solid black;
+    position: relative;
+  }
+  
+  .pokedexPanel::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: cyan;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 3px solid black;
+  }
+  
+  .pokedexPanel::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 2px solid black;
+  }
+  
